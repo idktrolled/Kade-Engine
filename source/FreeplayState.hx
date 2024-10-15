@@ -402,12 +402,14 @@ class FreeplayState extends MusicBeatState
 				changeDiff(1);
 		}
 
+		#if !mobile
 		#if cpp
 		@:privateAccess
 		{
 			if (FlxG.sound.music.playing)
 				lime.media.openal.AL.sourcef(FlxG.sound.music._channel.__source.__backend.handle, lime.media.openal.AL.PITCH, rate);
 		}
+		#end
 		#end
 
 		if (controls.BACK)
