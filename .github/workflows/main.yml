@@ -18,8 +18,8 @@ jobs:
           haxelib install flixel-addons 2.11.0
           haxelib install flixel-ui
           haxelib install hscript
+          haxelib install polymod 1.7.0
           haxelib git faxe https://github.com/ashea-code/faxe
-          haxelib git polymod https://github.com/swordcube/scriptless-polymod
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib git extension-webm https://github.com/brusakas/extension-webm
           haxelib git linc_luajit https://github.com/EnigmaEngine/linc_luajit
