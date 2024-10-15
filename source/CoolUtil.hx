@@ -1,5 +1,8 @@
 package;
 
+#if android
+import android.Tools;
+#end
 import openfl.utils.Assets as OpenFlAssets;
 
 using StringTools;
@@ -48,4 +51,13 @@ class CoolUtil
 		}
 		return dumbArray;
 	}
+
+	#if mobile
+	public static function showPopUp(message:String, title:String):Void
+	{
+		#if android
+		Tools.showAlertDialog(title, message, {name: "OK", func: null}, null);
+		#end
+	}
+        #end
 }
