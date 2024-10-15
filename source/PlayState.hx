@@ -1510,6 +1510,7 @@ class PlayState extends MusicBeatState
 				trace("pitched to " + songMultiplier);
 		}*/
 
+		#if !mobile
 		#if cpp
 		@:privateAccess
 		{
@@ -1518,6 +1519,7 @@ class PlayState extends MusicBeatState
 				lime.media.openal.AL.sourcef(vocals._channel.__source.__backend.handle, lime.media.openal.AL.PITCH, songMultiplier);
 		}
 		trace("pitched inst and vocals to " + songMultiplier);
+		#end
 		#end
 
 		for (i in 0...unspawnNotes.length)
@@ -2063,6 +2065,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		#if !mobile
 		#if cpp
 		if (FlxG.sound.music.playing)
 			@:privateAccess
@@ -2071,6 +2074,7 @@ class PlayState extends MusicBeatState
 			if (vocals.playing)
 				lime.media.openal.AL.sourcef(vocals._channel.__source.__backend.handle, lime.media.openal.AL.PITCH, songMultiplier);
 		}
+		#end
 		#end
 
 		if (generatedMusic)
