@@ -19,10 +19,10 @@ jobs:
           haxelib install flixel-ui
           haxelib install hscript
           haxelib git faxe https://github.com/ashea-code/faxe
-          haxelib git polymod https://github.com/larsiusprime/polymod
+          haxelib git polymod https://github.com/swordcube/scriptless-polymod
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib git extension-webm https://github.com/brusakas/extension-webm
-          haxelib git linc_luajit https://github.com/MasterEric/linc_luajit
+          haxelib git linc_luajit https://github.com/EnigmaEngine/linc_luajit
           haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
           haxelib git extension-androidtools https://github.com/idktrolled/extension-androidtools
           haxelib install actuate
