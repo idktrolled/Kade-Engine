@@ -1,4 +1,3 @@
-#if FEATURE_LUAMODCHART
 import flixel.FlxG;
 import llua.Convert;
 import llua.Lua;
@@ -1953,4 +1952,3 @@ class LuaGame extends LuaClass
 		super.Register(l);
 	}
 }
-#end
