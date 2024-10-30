@@ -111,7 +111,7 @@ class Main extends Sprite
 		bitmapFPS.smoothing = true;
 		//#end
 
-		game = new FlxGame(gameWidth, gameHeight, #if mobile CopyState.checkExistingFiles() ? initialState : CopyState #else initialState #end, zoom, framerate, framerate, skipSplash, startFullscreen);
+		var game:FlxGame = new FlxGame(gameWidth, gameHeight, #if mobile CopyState.checkExistingFiles() ? initialState : CopyState #else initialState #end, zoom, framerate, framerate, skipSplash, startFullscreen);
 		addChild(game);
 
 		//#if !mobile
@@ -122,8 +122,6 @@ class Main extends Sprite
 		// Finish up loading debug tools.
 		Debug.onGameStart();
 	}
-
-	var game:FlxGame;
 
 	var fpsCounter:KadeEngineFPS;
 
