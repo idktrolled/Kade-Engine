@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - uses: krdlab/setup-haxe@f0a0baa8ccdb1fe4fc316c8f30eb3ca77aa4ea4e
+      - uses: krdlab/setup-haxe@v1.5.1
         with:
           haxe-version: 4.3.6
       - name: run libraries from haxe
