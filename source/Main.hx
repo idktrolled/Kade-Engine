@@ -111,7 +111,7 @@ class Main extends Sprite
 		bitmapFPS.smoothing = true;
 		//#end
 
-		var game:FlxGame = new FlxGame(gameWidth, gameHeight, #if mobile CopyState.checkExistingFiles() ? initialState : CopyState #else initialState #end, zoom, framerate, framerate, skipSplash, startFullscreen);
+		var game:FlxGame = new FlxGame(gameWidth, gameHeight, #if mobile CopyState.checkExistingFiles() ? initialState : CopyState #else initialState #end, framerate, framerate, skipSplash, startFullscreen);
 		addChild(game);
 
 		//#if !mobile
