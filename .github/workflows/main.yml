@@ -29,6 +29,7 @@ jobs:
           haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
           haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp
           haxelib run lime rebuild hxcpp
+          haxelib install actuate
       - name: configure android
         run: |
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
